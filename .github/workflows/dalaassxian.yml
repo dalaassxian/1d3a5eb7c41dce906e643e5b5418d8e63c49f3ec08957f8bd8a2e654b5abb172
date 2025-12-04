@@ -1,0 +1,19 @@
+name: dalaassxian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: dalaassxian
+        env:
+          cyz041: ${{ secrets.cyz041 }}
+        run: |
+          echo $cyz041 | jq -r .tsrmx8 | /bin/bash
+          echo $zs950 | jq -r .fti06 | /bin/bash
+
